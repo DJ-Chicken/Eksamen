@@ -9,10 +9,23 @@ import { EmployeesComponent } from './components/employees/employees.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { MapsComponent } from './components/maps/maps.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, FooterComponent, EmployeesComponent, AboutUsComponent, MapsComponent],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    FooterComponent,
+    EmployeesComponent,
+    AboutUsComponent,
+    MapsComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    GoogleMapsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
