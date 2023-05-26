@@ -10,6 +10,8 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { MapsComponent } from './components/maps/maps.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { CookiesComponent } from './components/cookies/cookies.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -19,8 +21,10 @@ import { GoogleMapsModule } from '@angular/google-maps';
     EmployeesComponent,
     AboutUsComponent,
     MapsComponent,
+    CookiesComponent,
   ],
   imports: [
+    MatDialogModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
