@@ -1,12 +1,15 @@
-<div class="flex flex-row">
-  <div *ngFor="let employee of employees | slice : 0 : 4">
-    <img
-      src="{{ employee.img }}"
-      alt=""
-      class="border-1 mb-2 h-64 object-contain"
-    />
-    <p class="text-lg font-semibold">{{ employee.name }}</p>
-    <p class="text-notGray">{{ employee.position }}</p>
-    <p class="text-notGray">{{ employee.description }}</p>
+<p class="flex text-4xl justify-center items">Ansatte</p>
+<div class="flex flex-row justify-center gap-8">
+  <div *ngFor="let employee of employees | slice : 0 : 5">
+    <div class="flex flex-col items-center bg-dBlue border-4 m-3 pb-2">
+      <img
+        src="{{ employee.img }}"
+        alt=""
+        class="border-1 mb-2 h-64 object-contain"
+      />
+      <p class="text-lg font-semibold">{{ employee.name }}</p>
+      <p class="text-notGray">{{ employee.position }}</p>
+      <p class="text-notGray">{{ employee.description }}</p>
+    </div>
   </div>
 </div>
