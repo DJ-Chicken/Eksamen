@@ -1,0 +1,50 @@
+<div class="flex flex-col justify-center items-center">
+  <h2>Contact Form</h2>
+
+  <form (ngSubmit)="submitForm()">
+    <mat-form-field>
+      <mat-label>Navn</mat-label>
+      <input
+        matInput
+        placeholder="Enter your name"
+        [(ngModel)]="name"
+        name="name"
+        required
+      />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input
+        matInput
+        placeholder="Enter your email"
+        [(ngModel)]="email"
+        name="email"
+        required
+        email
+      />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Beskjed</mat-label>
+      <textarea
+        matInput
+        placeholder="Enter your message"
+        [(ngModel)]="message"
+        name="message"
+        required
+      ></textarea>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Avdeling</mat-label>
+      <mat-select [(ngModel)]="category" name="category">
+        <mat-option value="General">Avdeling1</mat-option>
+        <mat-option value="Support">Avdeling2</mat-option>
+        <mat-option value="Sales">Avdeling3</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit">Submit</button>
+  </form>
+</div>

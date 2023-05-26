@@ -12,6 +12,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { CookiesComponent } from './components/cookies/cookies.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatButtonModule } from '@angular/material/button';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,6 +28,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     AboutUsComponent,
     MapsComponent,
     CookiesComponent,
+    ContactFormComponent,
   ],
   imports: [
     MatDialogModule,
@@ -29,6 +36,11 @@ import { MatDialogModule } from '@angular/material/dialog';
     AppRoutingModule,
     BrowserAnimationsModule,
     GoogleMapsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    MatButtonModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
