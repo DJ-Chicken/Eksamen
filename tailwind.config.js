@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         blue: "#2e6079",
         dBlue: "#061417",
+        iconBorder: "#2db7b9",
       },
     },
   },
